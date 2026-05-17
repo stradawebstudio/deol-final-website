@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fleet | DEOL FREIGHT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#7b2f00",
+                        "tertiary-container": "#009ee4",
+                        "outline-variant": "#e0c0b2",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#c4c7ca",
+                        "on-surface": "#251913",
+                        "primary": "#a14000",
+                        "inverse-primary": "#ffb694",
+                        "on-tertiary-fixed-variant": "#004b70",
+                        "tertiary-fixed-dim": "#8ccdff",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fff8f6",
+                        "tertiary": "#006493",
+                        "on-surface-variant": "#584238",
+                        "secondary-container": "#dee0e3",
+                        "surface-dim": "#edd5cc",
+                        "background": "#fff8f6",
+                        "on-secondary-fixed-variant": "#44474a",
+                        "on-primary-fixed": "#351000",
+                        "on-background": "#251913",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#3c2d27",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#606366",
+                        "on-tertiary-container": "#00314a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#fff1ec",
+                        "surface-container": "#ffeae1",
+                        "surface-container-high": "#fce3da",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#191c1f",
+                        "secondary": "#5c5f62",
+                        "on-primary-container": "#531d00",
+                        "surface-variant": "#f6ded4",
+                        "primary-container": "#f36d21",
+                        "inverse-on-surface": "#ffede6",
+                        "on-tertiary-fixed": "#001e2f",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fff8f6",
+                        "secondary-fixed": "#e1e2e6",
+                        "primary-fixed-dim": "#ffb694",
+                        "surface-tint": "#a14000",
+                        "outline": "#8c7166",
+                        "surface-container-highest": "#f6ded4",
+                        "primary-fixed": "#ffdbcc",
+                        "tertiary-fixed": "#cae6ff",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "sm": "8px",
+                        "container-max": "1440px",
+                        "lg": "24px",
+                        "gutter": "24px",
+                        "xl": "40px",
+                        "unit": "4px",
+                        "xs": "4px",
+                        "margin-desktop": "48px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "label-sm": ["Montserrat"],
+                        "label-bold": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "h1": ["Montserrat"],
+                        "h2": ["Montserrat"],
+                        "h3": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-bold": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "h2": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                        "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-border {
+            border-left: 4px solid #f36d21;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%);
+        }
+        .dark-section {
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface border-b border-outline-variant top-0 sticky z-50">
+<!-- Top Contact Bar -->
+<div class="bg-inverse-surface text-inverse-on-surface py-2 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto flex justify-end gap-6 text-label-sm font-label-sm uppercase tracking-wider">
+<a class="flex items-center gap-2 hover:text-primary-fixed-dim transition-colors" href="mailto:Deol.freight@outlook.com">
+<span class="material-symbols-outlined text-sm">mail</span> Deol.freight@outlook.com
+                </a>
+<a class="flex items-center gap-2 hover:text-primary-fixed-dim transition-colors" href="tel:0410430003">
+<span class="material-symbols-outlined text-sm">phone</span> 0410430003
+                </a>
+</div>
+</div>
+<!-- Main Header -->
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<a href="index.html" class="flex items-center gap-4 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-DEFAULT hover:scale-[1.03] active:scale-[0.97] transition-all duration-200" aria-label="Deol Freight - Go to Homepage">
+<img alt="DEOL FREIGHT" class="h-10 w-auto hover:opacity-90 transition-opacity" src="logo.png"/>
+</a>
+<nav class="hidden md:flex items-center gap-8 font-label-bold text-label-bold uppercase tracking-wide">
+<a class="text-on-surface font-medium hover:text-primary transition-colors duration-200" href="index.html">Home</a>
+<a class="text-on-surface font-medium hover:text-primary transition-colors duration-200" href="services.html">Services</a>
+<a class="text-primary border-b-2 border-primary pb-1 transition-colors duration-200" href="fleet.html">Fleet</a>
+<a class="text-on-surface font-medium hover:text-primary transition-colors duration-200" href="about.html">About Us</a>
+<a class="text-on-surface font-medium hover:text-primary transition-colors duration-200" href="contact.html">Contact Us</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="hidden lg:flex items-center text-on-surface hover:text-primary transition-colors" onclick="window.location.href='index.html'">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="bg-primary-container text-white px-6 py-3 font-label-bold text-body-md font-bold uppercase tracking-wider active:scale-95 transition-transform duration-150" onclick="window.location.href='contact.html'">Get a Quote</button>
+</div>
+</div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="relative h-[600px] flex items-center overflow-hidden bg-inverse-surface">
+        <div class="absolute inset-0 z-0">
+            <img alt="Heavy Haulage Truck" class="w-full h-full object-cover opacity-80" src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2070&auto=format&fit=crop"/>
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+            <div class="max-w-2xl border-l-4 border-primary pl-6">
+                <h1 class="font-h1 text-h1 text-white mb-6 uppercase leading-tight">THE DEOL VELOCITY<br>FLEET</h1>
+                <p class="font-body-lg text-body-lg text-surface-variant max-w-xl">
+                    Engineered for precision. Maintained for certainty. Since 2022, we have redefined heavy haulage through a commitment to modern efficiency and uncompromising safety.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Haulage Units -->
+    <section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto bg-surface">
+        <div class="flex flex-col md:flex-row justify-between mb-16 gap-8">
+            <div class="max-w-2xl">
+                <span class="text-primary font-label-sm uppercase tracking-widest block mb-2 font-bold">OUR ARSENAL</span>
+                <h2 class="font-h2 text-h2 text-on-surface uppercase">SPECIALIZED HAULAGE UNITS</h2>
+            </div>
+            <div class="max-w-md">
+                <p class="font-body-md text-on-surface-variant">Our diverse fleet handles everything from interstate multi-combination logistics to specialized local distribution with industrial-grade reliability.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left large image card -->
+            <div class="lg:col-span-2 relative group overflow-hidden bg-surface border border-outline-variant">
+                <div class="h-80 relative">
+                    <img alt="Fleet of Trucks" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?q=80&w=2070&auto=format&fit=crop"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full">
+                        <span class="inline-block bg-primary text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest mb-3">INTERSTATE PRIORITY</span>
+                        <h3 class="font-h3 text-h3 text-white italic uppercase mb-2">HEAVY HAULAGE UNITS</h3>
+                        <p class="text-surface-variant text-sm max-w-lg">Multi-combination vehicles designed for cross-continental transit. Equipped with the latest telematics for real-time tracking and fuel efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right orange card -->
+            <div class="bg-primary-container text-white p-10 flex flex-col justify-center border border-outline-variant">
+                <span class="material-symbols-outlined text-4xl mb-6">local_shipping</span>
+                <h3 class="font-h3 text-h3 uppercase mb-4">LOCAL DISTRIBUTION<br>SPECIALISTS</h3>
+                <p class="text-white/90 text-sm mb-8">Precision equipment tailored for urban navigation and rapid last-mile delivery, ensuring integrity from warehouse to destination.</p>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined text-[18px]">check_circle</span> 24/7 Dispatch Monitoring</li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined text-[18px]">check_circle</span> High-Density Load-Bearing</li>
+                    <li class="flex items-center gap-3"><span class="material-symbols-outlined text-[18px]">check_circle</span> GPS Geo-Fencing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rigorous Maintenance -->
+    <section class="py-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-surface-container-low p-10 border border-outline-variant flex flex-col justify-between">
+                <div>
+                    <h2 class="font-h3 text-h3 uppercase text-on-surface mb-4">RIGOROUS<br>MAINTENANCE</h2>
+                    <p class="text-on-surface-variant text-sm mb-8 max-w-sm">Our fleet undergoes weekly inspections to exceed Australian safety standards. Zero-downtime philosophy keeps your freight moving.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-surface border border-outline-variant p-6 text-center shadow-sm">
+                        <div class="text-primary font-h3 font-bold">0%</div>
+                        <div class="text-[10px] uppercase font-bold tracking-widest mt-2 text-on-surface-variant">SAFETY FAILURE<br>RATE</div>
+                    </div>
+                    <div class="bg-surface border border-outline-variant p-6 text-center shadow-sm">
+                        <div class="text-primary font-h3 font-bold">2yr</div>
+                        <div class="text-[10px] uppercase font-bold tracking-widest mt-2 text-on-surface-variant">AVG FLEET AGE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-surface-container-lowest p-10 border border-outline-variant border-l-4 border-l-primary flex flex-col justify-center">
+                <span class="text-primary font-label-sm uppercase tracking-widest block mb-4 font-bold">FLEET INTEGRITY</span>
+                <p class="font-body-md text-on-surface-variant italic mb-6">"At Deol Freight, our trucks are more than vehicles; they are the backbone of Australian commerce. We invest in the best to deliver the best."</p>
+                <p class="font-label-sm text-sm text-on-surface">— Maintenance Director, Deol Freight</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted by Industry Titans -->
+    <section class="py-24 dark-section text-white mt-8">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-h2 text-h2 uppercase mb-4">TRUSTED BY INDUSTRY TITANS</h2>
+                <div class="w-16 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-[#242424] p-10 border border-[#333]">
+                    <div class="flex items-start gap-6 mb-6">
+                        <div class="bg-white text-primary p-3">
+                            <span class="material-symbols-outlined text-3xl">handshake</span>
+                        </div>
+                        <div>
+                            <h3 class="font-h3 text-h3 uppercase">LINFOX</h3>
+                            <span class="text-primary text-[10px] font-bold uppercase tracking-widest">STRATEGIC LOGISTICS PARTNER</span>
+                        </div>
+                    </div>
+                    <p class="text-white/70 text-sm">Our collaborative engagement with Linfox demonstrates our capability to meet the world-class operational standards required by Australia's largest logistics network.</p>
+                </div>
+                
+                <div class="bg-[#242424] p-10 border border-[#333]">
+                    <div class="flex items-start gap-6 mb-6">
+                        <div class="bg-white text-primary p-3">
+                            <span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+                        </div>
+                        <div>
+                            <h3 class="font-h3 text-h3 uppercase">SOUTHERN QLD STEEL</h3>
+                            <span class="text-primary text-[10px] font-bold uppercase tracking-widest">PRIMARY HAULAGE PROVIDER</span>
+                        </div>
+                    </div>
+                    <p class="text-white/70 text-sm">We provide heavy-duty haulage solutions for Southern Queensland Steel, proving our fleet's structural integrity and reliability under the most demanding industrial loads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operational Headquarters -->
+    <section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="flex flex-col justify-center">
+                <span class="text-primary font-label-sm uppercase tracking-widest block mb-2 font-bold">CONNECT WITH US</span>
+                <h2 class="font-h2 text-h2 uppercase text-on-surface mb-10">OPERATIONAL<br>HEADQUARTERS</h2>
+                
+                <div class="space-y-4 mb-10">
+                    <div class="bg-surface-container-low p-6 flex items-center gap-6 border border-outline-variant">
+                        <span class="material-symbols-outlined text-primary">phone_in_talk</span>
+                        <div>
+                            <div class="text-[10px] uppercase text-on-surface-variant font-bold tracking-widest mb-1">DIRECT LINE</div>
+                            <div class="font-h3 text-h3 font-bold text-on-surface">0410 430 003</div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-surface-container-low p-6 flex items-center gap-6 border border-outline-variant">
+                        <span class="material-symbols-outlined text-primary">mail</span>
+                        <div>
+                            <div class="text-[10px] uppercase text-on-surface-variant font-bold tracking-widest mb-1">EMAIL ADDRESS</div>
+                            <div class="font-label-bold text-base font-bold text-on-surface">Deol.freight@outlook.com</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="bg-[#1a1a1a] text-white py-5 px-8 font-label-bold uppercase tracking-widest hover:bg-primary transition-colors flex items-center justify-between w-full" onclick="window.location.href='contact.html'">
+                    INQUIRE ABOUT AVAILABILITY <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+            
+            <div class="bg-surface-container-high h-[500px] border border-outline-variant flex flex-col items-center justify-center text-on-surface-variant p-8 text-center relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10">
+                    <!-- Subtle map background pattern could go here, using a solid color for simplicity to match design -->
+                </div>
+                <div class="relative z-10 flex flex-col items-center">
+                    <span class="material-symbols-outlined text-5xl mb-4 text-on-surface">location_on</span>
+                    <p class="font-bold text-sm uppercase tracking-widest text-on-surface">OPERATING ACROSS QUEENSLAND & INTERSTATE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary-fixed-variant border-t border-outline-variant text-on-primary">
+<div class="bg-[#a14000] text-white">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<h3 class="font-h3 font-bold mb-6 text-white uppercase">DEOL FREIGHT</h3>
+<p class="font-label-sm text-label-sm text-white/80 max-w-xs mb-6">Leading the charge in Australian logistics since 2022. Precision, safety, and modern efficiency in every kilometer.</p>
+</div>
+<div>
+<h4 class="text-white/60 font-bold mb-6 font-label-sm text-label-sm uppercase tracking-widest">QUICK LINKS</h4>
+<ul class="space-y-4 font-label-sm text-label-sm">
+
+<li><a class="text-white/90 hover:text-white transition-colors" href="index.html">Service Areas</a></li>
+<li><a class="text-white/90 hover:text-white transition-colors" href="index.html">Compliance</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white/60 font-bold mb-6 font-label-sm text-label-sm uppercase tracking-widest">PARTNERS</h4>
+<ul class="space-y-4 font-label-sm text-label-sm">
+<li><a class="text-white/90 hover:text-white transition-colors" href="index.html">Carrier Login</a></li>
+<li><a class="text-white/90 hover:text-white transition-colors" href="index.html">Privacy Policy</a></li>
+<li><a class="text-white/90 hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white/60 font-bold mb-6 font-label-sm text-label-sm uppercase tracking-widest">ACCREDITATIONS</h4>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-white/80 border border-white/30 rounded-full p-2">verified_user</span>
+<span class="material-symbols-outlined text-white/80 border border-white/30 rounded-full p-2">local_shipping</span>
+<span class="material-symbols-outlined text-white/80 border border-white/30 rounded-full p-2">workspace_premium</span>
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop py-8 border-t border-white/20 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-label-sm text-label-sm text-white/60">© 2024 Deol Freight Carriers. Australian Owned &amp; Operated.</span>
+<div class="flex gap-6 text-white/80">
+<span class="material-symbols-outlined cursor-pointer hover:text-white transition-colors">description</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-white transition-colors">inventory</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-white transition-colors">share</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

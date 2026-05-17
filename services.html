@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#7b2f00",
+                        "tertiary-container": "#009ee4",
+                        "outline-variant": "#e0c0b2",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#c4c7ca",
+                        "on-surface": "#251913",
+                        "primary": "#a14000",
+                        "inverse-primary": "#ffb694",
+                        "on-tertiary-fixed-variant": "#004b70",
+                        "tertiary-fixed-dim": "#8ccdff",
+                        "on-secondary": "#ffffff",
+                        "surface": "#fff8f6",
+                        "tertiary": "#006493",
+                        "on-surface-variant": "#584238",
+                        "secondary-container": "#dee0e3",
+                        "surface-dim": "#edd5cc",
+                        "background": "#fff8f6",
+                        "on-secondary-fixed-variant": "#44474a",
+                        "on-primary-fixed": "#351000",
+                        "on-background": "#251913",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#3c2d27",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#606366",
+                        "on-tertiary-container": "#00314a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#fff1ec",
+                        "surface-container": "#ffeae1",
+                        "surface-container-high": "#fce3da",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#191c1f",
+                        "secondary": "#5c5f62",
+                        "on-primary-container": "#531d00",
+                        "surface-variant": "#f6ded4",
+                        "primary-container": "#f36d21",
+                        "inverse-on-surface": "#ffede6",
+                        "on-tertiary-fixed": "#001e2f",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fff8f6",
+                        "secondary-fixed": "#e1e2e6",
+                        "primary-fixed-dim": "#ffb694",
+                        "surface-tint": "#a14000",
+                        "outline": "#8c7166",
+                        "surface-container-highest": "#f6ded4",
+                        "primary-fixed": "#ffdbcc",
+                        "tertiary-fixed": "#cae6ff",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        md: "16px",
+                        sm: "8px",
+                        "container-max": "1440px",
+                        lg: "24px",
+                        gutter: "24px",
+                        xl: "40px",
+                        unit: "4px",
+                        xs: "4px",
+                        "margin-desktop": "48px",
+                        "margin-mobile": "16px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "label-sm": ["Montserrat"],
+                        "label-bold": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        h1: ["Montserrat"],
+                        h2: ["Montserrat"],
+                        h3: ["Montserrat"]
+                    },
+                    fontSize: {
+                        "headline-md": ["24px", {lineHeight: "32px", fontWeight: "600"}],
+                        "display-lg": ["48px", {lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700"}],
+                        "headline-lg": ["32px", {lineHeight: "40px", fontWeight: "700"}],
+                        "label-sm": ["12px", {lineHeight: "16px", fontWeight: "500"}],
+                        "label-bold": ["14px", {lineHeight: "20px", fontWeight: "600"}],
+                        "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}],
+                        "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}],
+                        h1: ["48px", {lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700"}],
+                        h2: ["32px", {lineHeight: "40px", fontWeight: "700"}],
+                        h3: ["24px", {lineHeight: "32px", fontWeight: "600"}]
+                    }
+                }
+            }
+        };
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fold-gradient {
+            background: linear-gradient(45deg, #251913 0%, #584238 100%);
+        }
+        .kinetic-border {
+            border-left: 4px solid #f36d21;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- Top Contact Bar -->
+<div class="bg-inverse-surface text-on-primary py-2 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto flex justify-end gap-6 font-label-sm text-[11px] uppercase tracking-wider">
+<a class="flex items-center gap-2 hover:text-primary-fixed-dim transition-colors" href="mailto:Deol.freight@outlook.com">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+                Deol.freight@outlook.com
+            </a>
+<a class="flex items-center gap-2 hover:text-primary-fixed-dim transition-colors" href="tel:0410430003">
+<span class="material-symbols-outlined text-[16px]">call</span>
+                0410430003
+            </a>
+</div>
+</div>
+<!-- TopNavBar -->
+<header class="bg-surface border-b border-outline-variant docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<a href="index.html" class="flex items-center gap-4 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-DEFAULT hover:scale-[1.03] active:scale-[0.97] transition-all duration-200" aria-label="Deol Freight - Go to Homepage">
+<img alt="DEOL FREIGHT" class="h-10 w-auto object-contain hover:opacity-90 transition-opacity" src="logo.png"/>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-bold uppercase tracking-wide text-on-surface hover:text-primary transition-colors duration-200" href="index.html">Home</a>
+<a class="font-label-bold uppercase tracking-wide text-primary border-b-2 border-primary pb-1 transition-colors duration-200" href="services.html">Services</a>
+<a class="font-label-bold uppercase tracking-wide text-on-surface hover:text-primary transition-colors duration-200" href="fleet.html">Fleet</a>
+<a class="font-label-bold uppercase tracking-wide text-on-surface hover:text-primary transition-colors duration-200" href="about.html">About Us</a>
+<a class="font-label-bold uppercase tracking-wide text-on-surface hover:text-primary transition-colors duration-200" href="contact.html">Contact Us</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="bg-primary-container text-on-primary px-6 py-3 font-label-bold uppercase tracking-widest active:scale-95 transition-transform duration-150" onclick="window.location.href='contact.html'">Get a Quote</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[400px] flex items-center bg-inverse-surface overflow-hidden">
+<div class="absolute inset-0 opacity-40">
+<img alt="Modern heavy-duty freight truck at dawn" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYqhkBALfJ4F3ruzK4IMrNNexPXYa16LpuFtAnIzE9f2hr1hBfqCT_sRDlIHE2YmV3IxyYqndPaj-F-wpet7NS5yy66toiFx4gwR4sQJ-lpIfKwZBv15JCmpLCLLS0ZOoChcqimX4iVbmd0G1_kQ-agGr_QTwgLvlGU2XIRJJ6ZMMfHlHCAGhIaDPCIwqcfnEFTUAEJ7HmkJ3yoAoeOhpFmIiGSD0EE8kyCWnwzh9sslWv2YUZYmJ47j-DaV_J265HC6Jm55IAQA"/>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-2xl">
+<span class="font-label-sm text-primary-fixed-dim uppercase tracking-[0.2em] mb-4 block">Specialized Trucking Services</span>
+<h1 class="font-display-lg text-on-primary mb-6">Moving Australia Forward</h1>
+<p class="font-body-lg text-surface-variant max-w-xl">Our mission is to provide seamless road transport solutions that empower Australian businesses through reliability, safety, and operational excellence.</p>
+</div>
+</div>
+<!-- Kinetic Accent -->
+<div class="absolute bottom-0 right-0 w-1/3 h-2 bg-primary-container"></div>
+</section>
+
+<!-- Services Grid -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg text-on-surface mb-4">Core Road Transport Solutions</h2>
+<div class="h-1 w-24 bg-primary-container"></div>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-sm">Specializing in high-capacity road freight, we focus on what we do best: moving your cargo across the continent or across town.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service Card 1 -->
+<div class="group bg-surface-container-lowest border border-outline-variant kinetic-border p-8 flex flex-col h-full hover:bg-surface-container-low transition-colors duration-300">
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary-container text-[48px]" style="font-variation-settings: 'FILL' 0;">local_shipping</span>
+</div>
+<h3 class="font-headline-md mb-4 text-on-surface">Interstate Transport</h3>
+<p class="font-body-md text-on-surface-variant mb-8 flex-grow">Reliable long-haul freight connections between all major Australian capital cities and regional hubs, ensuring timely delivery across borders.</p>
+<a class="inline-flex items-center gap-2 font-label-bold uppercase text-primary-container group-hover:gap-4 transition-all" href="contact.html">
+                        Learn More <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="group bg-surface-container-lowest border border-outline-variant kinetic-border p-8 flex flex-col h-full hover:bg-surface-container-low transition-colors duration-300">
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary-container text-[48px]" style="font-variation-settings: 'FILL' 0;">grid_view</span>
+</div>
+<h3 class="font-headline-md mb-4 text-on-surface">Local Distribution</h3>
+<p class="font-body-md text-on-surface-variant mb-8 flex-grow">Efficient metropolitan distribution services tailored for high-frequency urban routes and final-mile delivery excellence.</p>
+<a class="inline-flex items-center gap-2 font-label-bold uppercase text-primary-container group-hover:gap-4 transition-all" href="contact.html">
+                        Learn More <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="group bg-surface-container-lowest border border-outline-variant kinetic-border p-8 flex flex-col h-full hover:bg-surface-container-low transition-colors duration-300">
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary-container text-[48px]" style="font-variation-settings: 'FILL' 0;">bolt</span>
+</div>
+<h3 class="font-headline-md mb-4 text-on-surface">Express Road Freight</h3>
+<p class="font-body-md text-on-surface-variant mb-8 flex-grow">Time-critical road shipping solutions for urgent cargo that requires priority handling and expedited transit times via dedicated vehicles.</p>
+<a class="inline-flex items-center gap-2 font-label-bold uppercase text-primary-container group-hover:gap-4 transition-all" href="contact.html">
+                        Learn More <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Technical Excellence Section (Asymmetric Layout) -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 relative">
+<div class="relative z-10 border-[12px] border-white shadow-2xl">
+<img alt="Logistics tracking software on monitor" class="w-full aspect-[4/5] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAjftWA47XW0u2CmO1dWKp_ojZZFs9Naz9TAE_XEkOraf0xbdozg-c50ovgCC0WXKTn4sErFwey050rJXRR8VOIXhm9CMtpagnBSvI9e6KLDz75fIafZQ8nPVSFJ-dG77hGQ8880bHF27aAlk1TFPjVI5r9vFT4CGHEfBrIHQGNZZw16qPpIc12ONc6FQzdWykz5Cd4OlQdqYG7o9zjP7y0rbyFCGwtcMeXxViS4BpOlo-H6YadG56tRi4izovx5NDEfKdlz2hZQ"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-64 h-64 fold-gradient -z-0 hidden md:block"></div>
+</div>
+<div class="lg:col-span-6 lg:col-start-7 py-12">
+<span class="font-label-sm text-primary uppercase tracking-[0.2em] mb-4 block">Proven Partnerships</span>
+<h2 class="font-headline-lg text-on-surface mb-8">Trusted by Industry Leaders</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">
+                        Our reputation for precision and reliability has earned us the trust of Australia's largest industrial names. We are proud to serve as a key transport partner for organizations including <strong>Linfox</strong> and <strong>Southern Queensland Steel</strong>, maintaining the highest standards of fleet safety and performance.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-bold text-on-surface uppercase">Strategic Partnerships</span>
+</div>
+<p class="font-body-md text-on-surface-variant">Embedded within the supply chains of Linfox and Southern Queensland Steel.</p>
+</div>
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+<span class="font-label-bold text-on-surface uppercase">Fleet Integrity</span>
+</div>
+<p class="font-body-md text-on-surface-variant">Modern, high-spec heavy vehicles maintained to rigorous safety benchmarks.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<div class="bg-inverse-surface text-on-primary p-16 relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline-lg mb-6">Ready to Optimize Your Road Freight?</h2>
+<p class="font-body-lg text-surface-variant mb-10 max-w-2xl mx-auto">Get in touch with our trucking specialists today for a tailored quote and transport assessment.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-primary-container text-on-primary px-10 py-4 font-label-bold uppercase hover:bg-on-primary-fixed-variant transition-colors" onclick="window.location.href='contact.html'">
+                            Request a Quote
+                        </button>
+<button class="border-2 border-white text-white px-10 py-4 font-label-bold uppercase hover:bg-white hover:text-on-surface transition-colors" onclick="window.location.href='contact.html'">
+                            Contact Us
+                        </button>
+</div>
+</div>
+<!-- Abstract Design Element -->
+<div class="absolute top-0 right-0 w-32 h-32 border-t-8 border-r-8 border-primary-container opacity-20"></div>
+<div class="absolute bottom-0 left-0 w-32 h-32 border-b-8 border-l-8 border-primary-container opacity-20"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface border-t border-outline-variant full-width bottom-0">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="flex flex-col gap-6">
+<a href="index.html" class="inline-block cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-DEFAULT hover:scale-[1.03] active:scale-[0.97] transition-all duration-200" aria-label="Deol Freight - Go to Homepage">
+<img alt="DEOL FREIGHT" class="h-10 w-auto object-contain self-start hover:opacity-90 transition-opacity" src="logo.png"/>
+</a>
+<div class="flex flex-col gap-2">
+<p class="font-label-sm text-on-surface-variant">Partnering with industry leaders to provide premier road freight across Australia.</p>
+<div class="flex flex-col gap-1 mt-4">
+<a class="font-label-sm text-on-surface font-semibold flex items-center gap-2" href="mailto:Deol.freight@outlook.com">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+                                Deol.freight@outlook.com
+                            </a>
+<a class="font-label-sm text-on-surface font-semibold flex items-center gap-2" href="tel:0410430003">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                                0410430003
+                            </a>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-label-bold text-primary-container uppercase mb-6">Trucking Services</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="font-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="services.html#interstate">Interstate Transport</a></li>
+<li><a class="font-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="services.html#local">Local Distribution</a></li>
+<li><a class="font-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="index.html">Express Road Freight</a></li>
+<li><a class="font-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="fleet.html">Fleet Overview</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-primary-container uppercase mb-6">Support</h4>
+<ul class="flex flex-col gap-3">
+
+<li><a class="font-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="index.html">Service Areas</a></li>
+<li><a class="font-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="index.html">Compliance</a></li>
+<li><a class="font-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="index.html">Carrier Login</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-primary-container uppercase mb-6">Legal</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="font-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="index.html">Privacy Policy</a></li>
+<li><a class="font-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="index.html">Terms of Service</a></li>
+<li><a class="font-label-sm text-on-surface-variant hover:text-primary-container transition-colors" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-outline-variant px-margin-mobile md:px-margin-desktop py-8 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-on-surface-variant opacity-70">© 2024 Deol Freight Carriers. Australian Owned &amp; Operated.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary-container transition-colors">share</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary-container transition-colors">mail</span>
+</div>
+</div>
+</footer>
+</body></html>
